@@ -1,7 +1,16 @@
-# Project Title
+# Karatsuba Multiplication
 
-* **Objective** - To create a product...
-* **Purpose** - To gain familiarity the following features...
+* **Objective** - To create an algorithm to efficiently multiply numbers.
+* **Purpose** - To gain familiarity the following features:
+    * Big O Notation
+    * Grade School addition
+    * Iterative Multiplication
+    * Recursive Multiplication
+    * Karatsuba Multiplication
+* **Description**
+    * The purpose of this project is to create several implementations of multiplication as described in  Page 8 of Tim Roughgarden's `Algorithms Illuminates, Part 1: The Basics`.
+    * The application should have an object-oriented representation of the pseudo-code described in the book and justify its claims of performance.
+  
 
 
 
