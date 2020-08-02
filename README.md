@@ -15,11 +15,6 @@
 
 
 
-## Objective
-
-#### Part 1 - ...
-* Ensure that all test cases in `com.github.curriculeon` pass with 100% success rate. 
-
 
 
 
