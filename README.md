@@ -10,6 +10,22 @@
 * **Description**
     * The purpose of this project is to create several implementations of multiplication as described in  Page 8 of Tim Roughgarden's `Algorithms Illuminates, Part 1: The Basics`.
     * The application should have an object-oriented representation of the pseudo-code described in the book and justify its claims of performance.
+
+
+## Karatsuba Multiplication
+* Given a 4 digit value composes two halves, compute the product of two 4 digit numbers by
+    1. Split digits of each number to `a` and `b` 
+        * Get first half of the 4 digit number, named `a`
+        * Get second half of the 4 digit number named `b`
+    2. Compute the product of `a` of first half and `a` of second half named `aProduct`
+    3. Compute the product of `b` of first half and `b` of second half named `bProduct`
+    4. Compute sum of `a` of first half and `b` of first half named `firstHalfSum`
+    5. Compute sum of `a` of second half and `b` of second half named `secondHalfSum`
+    6. Compute product of `firstHalfSum` and `secondHalfSum` named `productOfSumOfHalves`.
+    7. Compute sum of `productOfSumOfHalves`, `-aProduct`, and `-bProduct` named `deltaOfProductOfSumOfHalves`
+    8. Compute `10^digitLength/2^0 * aProduct + 10^digitLength/2^1 * deltaOfProductOfSumOfHalves +bProduct` as `product`.
+     
+           
   
 
 
