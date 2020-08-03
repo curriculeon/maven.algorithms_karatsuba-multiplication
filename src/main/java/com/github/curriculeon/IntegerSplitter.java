@@ -2,28 +2,14 @@ package com.github.curriculeon;
 
 public class IntegerSplitter {
     private final String integerToBeAnalyzedAsString;
+    private final int numberOfDigits;
 
     public IntegerSplitter(Integer integerToBeAnalyzed) {
         this.integerToBeAnalyzedAsString = integerToBeAnalyzed.toString();
+        this.numberOfDigits = integerToBeAnalyzedAsString.length();
     }
 
-    public Integer getIntegerToBeAnalyzed() {
-        return Integer.parseInt(integerToBeAnalyzedAsString);
-    }
-
-    public Integer getFirstQuarterOfDigits() {
-        return Integer.valueOf(integerToBeAnalyzedAsString.substring(0, integerToBeAnalyzedAsString.length() / 4));
-    }
-
-    public Integer getSecondQuarterOfDigits() {
-        return Integer.valueOf(integerToBeAnalyzedAsString.substring(integerToBeAnalyzedAsString.length() / 4, integerToBeAnalyzedAsString.length() / 2));
-    }
-
-    public Integer getThirdQuarterOfDigits() {
-        return Integer.valueOf(integerToBeAnalyzedAsString.substring(integerToBeAnalyzedAsString.length() / 2, (3*integerToBeAnalyzedAsString.length()) / 4));
-    }
-
-    public Integer getFourthQuarterOfDigits() {
-        return Integer.valueOf(integerToBeAnalyzedAsString.substring((3*integerToBeAnalyzedAsString.length()) / 4));
+    public Integer getQuarter(Integer quarter) {
+        return Integer.valueOf(integerToBeAnalyzedAsString.substring((int) ((quarter-1) * .25), (int) (quarter * .25)));
     }
 }

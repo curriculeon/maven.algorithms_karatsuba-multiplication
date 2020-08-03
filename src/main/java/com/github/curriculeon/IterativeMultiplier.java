@@ -3,6 +3,8 @@ package com.github.curriculeon;
 import com.github.curriculeon.utils.AbstractMultiplier;
 
 public class IterativeMultiplier extends AbstractMultiplier {
+    public IterativeMultiplier() {
+    }
     public IterativeMultiplier(Integer baseValue, Integer multiplierValue) {
         super(baseValue, multiplierValue);
     }
